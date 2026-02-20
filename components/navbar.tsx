@@ -9,6 +9,7 @@ import { specializations } from "@/lib/clinic-data"
 const navLinks = [
   { href: "/", label: "Acasa" },
   { href: "/specialitati", label: "Specialitati", hasDropdown: true },
+  { href: "/programari", label: "Programari" },
   { href: "/echipa", label: "Echipa Medicala" },
   { href: "/contact", label: "Contact" },
 ]
@@ -140,6 +141,13 @@ export function Navbar() {
                 </div>
               )}
             </div>
+            <Link
+              href="/programari"
+              className="px-4 py-3 rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Programari
+            </Link>
             <Link
               href="/echipa"
               className="px-4 py-3 rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
